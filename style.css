@@ -1,0 +1,114 @@
+/* Global Styles */
+:root {
+  --primary-color: #0b3d91;      /* dark blue reminiscent of Apple */
+  --secondary-color: #007aff;    /* accent blue similar to Apple buttons */
+  --text-color: #333333;         /* dark text for contrast */
+  --background-color: #f8f9fa;   /* light background for readability */
+  --card-background: #ffffff;     /* white card background */
+  --chip-background: #e6f0ff;     /* pale blue chips */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero {
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero .tagline {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #dce7ff;
+}
+
+/* Container to center content */
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Section headings */
+h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+/* Skill chips styling */
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chips span {
+  background: var(--chip-background);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsibilities list */
+.responsibilities ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5rem;
+}
+
+/* Project and roadmap grids */
+.project-grid,
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.project-card,
+.roadmap-card {
+  background: var(--card-background);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section styling */
+.contact p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .tagline {
+    font-size: 1rem;
+  }
+  .container {
+    width: 90%;
+  }
+}
